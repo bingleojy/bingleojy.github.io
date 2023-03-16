@@ -1,0 +1,73 @@
+html {
+    height: -webkit-fill-available;
+    font-family: "Space Mono", monospace , "Noto Sans", sans-serif;
+    font-size: 15px;
+}
+
+body {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+main {
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: Oswald, sans-serif;
+  font-size: 20px;
+}
+
+pre ~ code {
+    font-family: "Courier New", monospace;
+}
+
+a:link {
+    text-decoration: none;
+    color: --bs-info-text;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.post-toc{
+    
+}
+
+.post-toc-item post-toc-level-4{
+
+}
+
+.post-toc-link{
+    text-decoration: none;
+    color: #808080;
+    font-size: 0.8em;
+}
+
+p{
+    font-size: 1.0em;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}

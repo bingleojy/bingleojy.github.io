@@ -1,345 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<!-- Head Tag -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        body
-        {
-
-            html,
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6
-            {
-                font-family: "Roboto", sans-serif
-            }
-        }
-
-        pre>code
-        {
-            font-family: "Courier New", monospace;
-        }
-
-        .fonts-1
-        {
-            font-family: "Audiowide", sans-serif;
-        }
-
-        .fonts-2
-        {
-            font-family: "Sofia", sans-serif;
-        }
-
-        .fonts-3
-        {
-            font-family: "Trirong", serif;
-        }
-
-        .b-example-divider
-        {
-            height: 3rem;
-        }
-
-        a:link
-        {
-            text-decoration: none;
-        }
-
-        a:visited
-        {
-            text-decoration: none;
-        }
-
-        a:hover
-        {
-            text-decoration: underline;
-        }
-
-        a:active
-        {
-            text-decoration: underline;
-        }
-
-    </style>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-
-    </script>
-    <meta name="generator" content="Hexo 6.3.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hexo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font预加载&缓存 -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2
+		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+    </noscript>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <!-- Bulma's extensions:  timeline -->
+    <link rel="stylesheet" href="/css/bulma-timeline.min.css">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 <!-- Page Container -->
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-11">
-                <div class="container">
-                    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                            <span class="fs-4">冰心阁主</span>
-                        </a>
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                            <input type="search" class="form-control" placeholder="搜索..." aria-label="Search">
-                        </form>
-                        <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="/" class="nav-link px-4 link-secondary" aria-current="page">主页</a></li>
-                            <li class="nav-item"><a href="/archives" class="nav-link px-4 link-dark">归 档</a></li>
-                            <li class="nav-item"><a href="/categories" class="nav-link px-4 link-dark">分 类</a></li>
-                            <li class="nav-item"><a href="/docs" class="nav-link px-4 link-dark">文 档</a></li>
-                            <li class="nav-item"><a href="/about" class="nav-link px-4 link-dark">关于我</a></li>
-                        </ul>
-                    </header>
+        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/"> Home </a>
+                    <a class="navbar-item" href="/archives"> Archives </a>
+                    <a class="navbar-item" href="/tags"> Tags </a>
+                    <a class="navbar-item" href="/docs"> Docs </a>
+                    <a class="navbar-item" href="/categories"> Categoies </a>
+                    <a class="navbar-item" href="/about"> About </a>
+                    <a class="navbar-item" href="/contact"> Contact </a>
+                    <a class="navbar-item" href="/me"> Me </a>
                 </div>
-                <div class="container">
-                    <!-- 归档 -->
-                    <div class="container">
-                        <!-- 年份分类  -->
-                        <div class="w3-justify">
-                            <br>
-                            <span class="">2023</span><br>
-                            <br>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;03-06&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2023/2023/pip/">Pip - Python包管理工具 </a>
-                        </div>
-                        <!-- 年份分类  -->
-                        <div class="w3-justify">
-                            <br>
-                            <span class="">2022</span><br>
-                            <br>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-30&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/the-form-of-income/">投资者: 收入的形式 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/xml/">XML 被设计用来传输和存储数据，不用于表现和展示数据，HTML 则用来表现数据 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/regular-expression/">正则表达式: 是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为&#34;元字符&#34;) </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/design-pattern/">设计模式: 是软件开发人员在软件开发过程中面临的一般问题的解决方案 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/echarts/">ECharts 是一个使用 JavaScript 实现的开源可视化库，涵盖各行业图表，满足各种需求 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/json/">JSON 是存储和交换文本信息的语法，类似 XML </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/ajax/">AJAX 不是新的编程语言，而是一种使用现有标准的新方法 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/html-dom/">HTML DOM 定义了访问和操作 HTML 文档的标准方法 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-28&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/compass/">Compass 是一个开源 CSS 创作框架，它使用Sass 样式表语言使编写样式表变得强大而简单 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/gpg/">GPG: 是一个加密、解密、签名、验证工具 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/web-webpack/">Web: webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler) </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/js-uglifyjs/">JavaScript: UglifyJS 是一个用 JavaScript 编写的 JavaScript 压缩器/压缩器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/js-vite/">JavaScript: Vite 是一种新型前端构建工具，能够显著提升前端开发体验 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/js-rollup/">JavaScript: Rollup 是一个 JavaScript 模块打包器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-24&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/js-commonjs-and-es-module/">JavaScript: CommonJs和Es Module的区别 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-23&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/crucian/">Crucian主题 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-23&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/css-selector/">CSS：选择器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-18&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/investor-extension/">投资者： 外延决定你的财富高度 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-13&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/postcss/">PostCSS: 是一个用 JavaScript 转换 CSS 的工具 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-13&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/stylus/">Stylus: 是一种 CSS 预处理器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-13&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/money/">Money: 钱是势利的，它只会聚在能驾驭它的人身边,因为这样的人可以实现钱的增值 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/jsdoc/">JSDoc: 是根据 JavaScript 文件中的注释信息，生成应用程序或库、模块的API文档的工具 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/sass/">Sass: 是 CSS 扩展语言，可以帮助我们减少 CSS 重复的代码，节省开发时间. </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/csaa/">Csaa </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/less/">Less: 是一种 CSS 预处理器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/stylelint/">StyleLint: 是一个强大、先进的 CSS 代码检查器(linter) </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/eslint/">JavaScript: 代码风格检测 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-31&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/hexo/">Hexo 快速、简洁且高效的博客框架 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-31&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/v8-javascript-engine/">V8-JavaScript-Engine: V8 是驱动 Google Chrome 的 JavaScript 引擎的名称 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-31&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/js/">JavaScript: 是一种具有函数优先的轻量级，解释型或即时编译型的编程语言 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-31&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/webssembly/">WebAssembly: 是由主流浏览器厂商组成的 W3C 社区团体 制定的一个新的规范 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/flask/">Flask: 是一个用 Python 编写的 Web 应用程序框架 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/jinja2/">Jinja2: 是一种 Python 的模板语言 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/css/">CSS: 是一种标准的样式表语言,用于描述网页的表现形式 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/html/">HTML: 是一种用于创建网页的标准标记语言 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/cscc/">Airbnb CSS/Sass风格指南 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/hexo-theme-0-1/"> Hexo: 如何自定义Hexo主题 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-26&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/helloworld/">helloworld </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-15&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/gun-bash/">Bash: 是 GNU 操作系统的 Shell 或命令语言解释器 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-15&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/windows-terminal/">Windows Terminal: Windows 终端是一个新式主机应用程序，它面向你喜爱的命令行 Shell </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-15&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/powershell/">PowerShell：是Windows环境所开发的壳程式 (shell)及脚本语言技术 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-02&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/python/">Python: 是一种解释型、面向对象、动态数据类型的高级程序设计语言 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;07-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/investor-segment/">投资者: 拥有财富的段位 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;06-30&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/efficient-people/">管理的常识: 高效人士的九次实践 </a>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;06-30&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2022/2022/emacs/">Emacs编辑器 </a>
-                        </div>
-                        <!-- 年份分类  -->
-                        <div class="w3-justify">
-                            <br>
-                            <span class="">2021</span><br>
-                            <br>
-                        </div>
-                        <div class="w3-row-padding w3-margin">
-                            <span class="">&nbsp;&nbsp;08-01&nbsp;&nbsp;</span>
-                            <a class="w3-bar-item w3-button w3-padding w3-text-teal" href="/2021/2021/ejs/">Ejs: 是一个高效的嵌入式 JavaScript 模板引擎 </a>
-                        </div>
-                        <div class="container">
-                            <!-- Pagination -->
-                            <nav aria-label="page navigation">
-                                <ul class="page pagination justify-content-center">
-                                    <span class=""></span>
-                                    <ul class="page-item">
-                                        <a href="/archives/2022/page/2/" class="page-link px-4 link-dark">下一页 </a>
-                                    </ul>
-                                </ul>
-                            </nav>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span> Github </span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="container sticky-bottom">
-                    <footer class="border-top">
-                        <span>&copy; 2023</span>
-                        <a href=""><i class="bi bi-github"></i></a>
-                    </footer>
-                </div>
             </div>
-            <div class="col"></div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="container">
+            <h2 class="blog-archive-title">2022</h2>
+            <div class="blog-post mb-6 px-6">
+                <!-- Title -->
+                <h2 class="blog-post-title-archive">
+                    <a href="/post/20220830200053.html"> 投资者: 收入的形式 </a>
+                </h2>
+                <!-- Date and Author -->
+                <p class="blog-post-meta"> 2022-08-30 by Binglin Li </p>
+            </div>
+            <div class="blog-post mb-6 px-6">
+                <!-- Title -->
+                <h2 class="blog-post-title-archive">
+                    <a href="/post/20220828183937.html"> XML 被设计用来传输和存储数据，不用于表现和展示数据，HTML 则用来表现数据 </a>
+                </h2>
+                <!-- Date and Author -->
+                <p class="blog-post-meta"> 2022-08-28 by Binglin Li </p>
+            </div>
+            <div class="blog-post mb-6 px-6">
+                <!-- Title -->
+                <h2 class="blog-post-title-archive">
+                    <a href="/post/20220828181529.html"> 正则表达式: 是一种文本模式，包括普通字符（例如，a 到 z 之间的字母）和特殊字符（称为"元字符") </a>
+                </h2>
+                <!-- Date and Author -->
+                <p class="blog-post-meta"> 2022-08-28 by Binglin Li </p>
+            </div>
+            <div class="blog-post mb-6 px-6">
+                <!-- Title -->
+                <h2 class="blog-post-title-archive">
+                    <a href="/post/20220828181342.html"> 设计模式: 是软件开发人员在软件开发过程中面临的一般问题的解决方案 </a>
+                </h2>
+                <!-- Date and Author -->
+                <p class="blog-post-meta"> 2022-08-28 by Binglin Li </p>
+            </div>
+            <div class="blog-post mb-6 px-6">
+                <!-- Title -->
+                <h2 class="blog-post-title-archive">
+                    <a href="/post/20220828181129.html"> ECharts 是一个使用 JavaScript 实现的开源可视化库，涵盖各行业图表，满足各种需求 </a>
+                </h2>
+                <!-- Date and Author -->
+                <p class="blog-post-meta"> 2022-08-28 by Binglin Li </p>
+            </div>
+            <nav class="pagination mb-5 is-rounded" role="navigation" aria-label="pagination">
+                <!-- Frevious Page -->
+                <a class="pagination-previous" href="/"> Previous </a>
+                <!-- Next Page -->
+                <a class="pagination-next" href="/archives/2022/page/2/"> Next </a>
+                </ul>
+            </nav>
         </div>
     </div>
+    <div class="container">
+        <footer class="footer">
+            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+            </div>
+        </footer>
+    </div>
 </body>
-<!-- Page Container end  -->
+<!-- After footer scripts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>
+    hljs.highlightAll();
+
+</script>
 
 </html>

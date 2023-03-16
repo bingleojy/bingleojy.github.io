@@ -1,150 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<!-- Head Tag -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style type="text/css">
-        body
-        {
-
-            html,
-            body,
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6
-            {
-                font-family: "Roboto", sans-serif
-            }
-        }
-
-        pre>code
-        {
-            font-family: "Courier New", monospace;
-        }
-
-        .fonts-1
-        {
-            font-family: "Audiowide", sans-serif;
-        }
-
-        .fonts-2
-        {
-            font-family: "Sofia", sans-serif;
-        }
-
-        .fonts-3
-        {
-            font-family: "Trirong", serif;
-        }
-
-        .b-example-divider
-        {
-            height: 3rem;
-        }
-
-        a:link
-        {
-            text-decoration: none;
-        }
-
-        a:visited
-        {
-            text-decoration: none;
-        }
-
-        a:hover
-        {
-            text-decoration: underline;
-        }
-
-        a:active
-        {
-            text-decoration: underline;
-        }
-
-    </style>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
-    <script>
-        hljs.highlightAll();
-
-    </script>
-    <meta name="generator" content="Hexo 6.3.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="Hexo">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google font预加载&缓存 -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2
+		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+    </noscript>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <!-- Bulma's extensions:  timeline -->
+    <link rel="stylesheet" href="/css/bulma-timeline.min.css">
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 <!-- Page Container -->
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col"></div>
-            <div class="col-md-11">
-                <div class="container">
-                    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-                        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                            <span class="fs-4">冰心阁主</span>
-                        </a>
-                        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                            <input type="search" class="form-control" placeholder="搜索..." aria-label="Search">
-                        </form>
-                        <ul class="nav nav-pills">
-                            <li class="nav-item"><a href="/" class="nav-link px-4 link-secondary" aria-current="page">主页</a></li>
-                            <li class="nav-item"><a href="/archives" class="nav-link px-4 link-dark">归 档</a></li>
-                            <li class="nav-item"><a href="/categories" class="nav-link px-4 link-dark">分 类</a></li>
-                            <li class="nav-item"><a href="/docs" class="nav-link px-4 link-dark">文 档</a></li>
-                            <li class="nav-item"><a href="/about" class="nav-link px-4 link-dark">关于我</a></li>
-                        </ul>
-                    </header>
+        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+                </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="/"> Home </a>
+                    <a class="navbar-item" href="/archives"> Archives </a>
+                    <a class="navbar-item" href="/tags"> Tags </a>
+                    <a class="navbar-item" href="/docs"> Docs </a>
+                    <a class="navbar-item" href="/categories"> Categoies </a>
+                    <a class="navbar-item" href="/about"> About </a>
+                    <a class="navbar-item" href="/contact"> Contact </a>
+                    <a class="navbar-item" href="/me"> Me </a>
                 </div>
-                <div class="container">
-                    <div class="w3-container w3-white w3-padding-32">
-                        <div class="w3-row-padding">
-                            <!-- HEADER  -->
-                            <header class="w3-container w3-center w3-padding-48 w3-white">
-                                <h3 class="w3-xxlarge"><b>关于我</b></h3>
-                                <h5>
-                                    <i class="fa fa-calendar fa-fw w3-margin-right"></i>
-                                    <span class="w3-opacity"></i>March 2nd 2023</span>
-                                </h5>
-                            </header>
-                            <!-- IMAGE HEADER -->
-                            <header class="w3-card-4 w3-margin">
-                                <div class="w3-display-container w3-text-white">
-                                    <img class="w3-image" src="/imgs/home-01.jpg" alt="Fashion Blog">
-                                    <div class="w3-display-left w3-padding-large">
-                                        <h1 class="w3-text-white">Binglin Li's</h1>
-                                        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>FASHION BLOG</b></h1>
-                                        <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
-                                    </div>
-                                </div>
-                            </header>
-                            <span>
-                            </span>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                    <span class="icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </span>
+                                    <span> Github </span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
-                <div class="container sticky-bottom">
-                    <footer class="border-top">
-                        <span>&copy; 2023</span>
-                        <a href=""><i class="bi bi-github"></i></a>
-                    </footer>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="timeline">
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">Start</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <p class="heading">January 2016</p>
+                    <p>Timeline content - Can include any HTML element</p>
                 </div>
             </div>
-            <div class="col"></div>
+            <div class="timeline-item">
+                <div class="timeline-marker is-image is-32x32">
+                    <img src="https://bulma.io/images/placeholders/32x32.png">
+                </div>
+                <div class="timeline-content">
+                    <p class="heading">February 2016</p>
+                    <p>Timeline content - Can include any HTML element</p>
+                </div>
+            </div>
+            <header class="timeline-header">
+                <span class="tag is-primary">2017</span>
+            </header>
+            <div class="timeline-item">
+                <div class="timeline-marker is-icon">
+                    <i class="fa fa-flag"></i>
+                </div>
+                <div class="timeline-content">
+                    <p class="heading">March 2017</p>
+                    <p>Timeline content - Can include any HTML element</p>
+                </div>
+            </div>
+            <div class="timeline-header">
+                <span class="tag is-medium is-primary">End</span>
+            </div>
         </div>
     </div>
+    <div class="container">
+        <footer class="footer">
+            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+            </div>
+        </footer>
+    </div>
 </body>
-<!-- Page Container end  -->
+<!-- After footer scripts -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/monokai.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+<script>
+    hljs.highlightAll();
+
+</script>
 
 </html>
