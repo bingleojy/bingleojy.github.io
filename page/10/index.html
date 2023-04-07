@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -81,14 +80,25 @@
     <div class="container">
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220630195445.html"> Emacs编辑器 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-06-30</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-06-30</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <h4 id="Emacs是一个可扩展-可定制-可实时自动化显示编辑器">Emacs是一个可扩展,可定制,可实时自动化显示编辑器</h4>
             <p>连续按ctrl x m（显示为C-x m）可以打开Emacs帮助文件<br> 选项前的 – 也可以简化为 - 是一样的效果</p>
@@ -116,14 +126,25 @@ $ emacs --chdir demos```
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20210801005410.html"> Ejs: 是一个高效的嵌入式 JavaScript 模板引擎 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2021-08-01</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2021-08-01</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <h3 id="“E”-代表什么？">“E” 代表什么？</h3>
             <p>可以表示 “可嵌入（Embedded）”，也可以是“高效（Effective）”、“优雅（Elegant）”或者是“简单（Easy）”。<br> EJS 是一套简单的模板语言，帮你利用普通的 JavaScript 代码生成 HTML 页面。<br> EJS 没有如何组织内容的教条；也没有再造一套迭代和控制流语法；有的只是普通的 JavaScript 代码而已。</p>
@@ -138,7 +159,7 @@ $ emacs --chdir demos```
                 </a>
             </p>
         </section>
-        <nav class="pagination mb-5 is-rounded" role="navigation" aria-label="pagination">
+        <nav class="pagination mb-5 is-rounded article-text-uppercase" role="navigation" aria-label="pagination">
             <!-- Frevious Page -->
             <a class="pagination-previous" href="/page/9/"> Previous </a>
             <!-- Next Page -->
@@ -147,8 +168,14 @@ $ emacs --chdir demos```
         </nav>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

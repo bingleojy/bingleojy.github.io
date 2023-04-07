@@ -1,12 +1,14 @@
-html {
-    height: -webkit-fill-available;
-    font-family: "Space Mono", monospace , "Noto Sans", sans-serif;
-    font-size: 15px;
-}
 
-body {
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
+html,body {
+    height: -webkit-fill-available;
+    font-family: "Anonymous Pro", "Noto Serif SC", Serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    width: 100%;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    color: #808080;
+    background-color: #FFFFFF;
 }
 
 main {
@@ -17,18 +19,40 @@ main {
   overflow-y: hidden;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: Oswald, sans-serif;
-  font-size: 20px;
+pre,code {
+    font-family: "Anonymous Pro", Monaco, Menlo, "Noto Serif SC", monospace;
 }
 
-pre ~ code {
-    font-family: "Courier New", monospace;
+
+/*网站样式*/
+.site{
+
+}
+
+.site-copyright-notice{
+
+}
+
+
+.site-navbar-menu{
+    font-weight: bold;
+}
+
+.site-footer{
+
+}
+
+.article-text-uppercase{
+    text-transform: uppercase;
+}
+
+.article-text-center{
+    text-align: center;
 }
 
 a:link {
     text-decoration: none;
-    color: --bs-info-text;
+    color: #000000;
 }
 
 a:visited {
@@ -43,31 +67,81 @@ a:active {
     text-decoration: underline;
 }
 
-.post-toc{
-    
+/*网站文章样式*/
+.article{
+    color: #808080;
 }
 
-.post-toc-item post-toc-level-4{
+.article-link{
+    text-decoration: none;
+    color: #CCCCCC;
+    font-size: 0.6em;
+}
+
+.article-header{
+    font-family: "Anonymous Pro","Noto Serif SC", Serif;
+    color: #000000;
+    font-weight: bold;
+}
+
+.article-subtitle{
+    font-family: 'Poiret+One',Serif;
+    color: #CCCCCC;
+}
+
+.article-content{
+    font-size: 0.8em;
+    line-height: 1.9;
+    word-spacing: 0.5px;
+    letter-spacing: 0.2px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Anonymous Pro","Noto Serif SC", Serif;
+}
+
+h1{ font-size: 1.8em; }
+h2{ font-size: 1.3em; }
+h3{ font-size: 1.0em; }
+h4{ font-size: 0.9em; }
+h5{ font-size: 0.8em; }
+h6{ font-size: 0.7em; }
+h7{ font-size: 0.6em; }
+h8{ font-size: 0.5em; }
+
+.article-p{}
+.article-code{}
+.article-code-header{}
+.article-code-link{}
+.article-copyright-notice{}
+.article-footer{
+    color: #808080;
+    background-color: #FFFFFF;
+}
+
+.article-footer-header{
 
 }
 
-.post-toc-link{
+.article-footer-content{
+
+}
+
+.article-toc{
+    font-size: 1.0em;
+}
+
+.article-toc-header{
+    font-size: 1.0em;
+}
+
+.article-toc-link{
     text-decoration: none;
     color: #808080;
     font-size: 0.8em;
 }
 
 p{
-    font-size: 1.0em;
-}
-
-/*
- * Footer
- */
-.blog-footer {
-
-}
-
-.blog-footer p:last-child {
-    margin-bottom: 0;
+    font-family: "Anonymous Pro", "Noto Sans", sans-serif;
+    font-size: 0.8em;
 }

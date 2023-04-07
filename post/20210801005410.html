@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -79,20 +78,29 @@
         </nav>
     </div>
     <div class="container">
-        <div class="section px-6">
+        <div class="section px-6 article">
             <div class="columns">
                 <div class="column is-four-fifths">
                     <!-- Title -->
-                    <h2 class="title is-3">
-                        <a href="/post/20210801005410.html"> Ejs: 是一个高效的嵌入式 JavaScript 模板引擎 </a>
-                    </h2>
+                    <h2 class="article-header article-text-center">Ejs: 是一个高效的嵌入式 JavaScript 模板引擎</h2>
                     <!-- Date and Author -->
-                    <h2 class="tag has-addons subtitle">
-                        <span class="tag">2021-08-01</span>
-                        <span class="tag is-primary">Binglin Li</span>
-                    </h2>
+                    <h6 class="article-subtitle article-text-center">
+                        <span=class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-at"></i>
+                            </span>
+                            <span>2021-08-01</span>
+                        </span>
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                            <span>Binglin Li</span>
+                        </span>
+                    </h6>
+                    <br>
                     <!-- Content -->
-                    <div class="content mb-5 mr-0 pt-3 px-5">
+                    <div class="content mb-5 mr-0 pt-3 px-5 article-content">
                         <h3 id="“E”-代表什么？">“E” 代表什么？</h3>
                         <p>可以表示 “可嵌入（Embedded）”，也可以是“高效（Effective）”、“优雅（Elegant）”或者是“简单（Easy）”。<br> EJS 是一套简单的模板语言，帮你利用普通的 JavaScript 代码生成 HTML 页面。<br> EJS 没有如何组织内容的教条；也没有再造一套迭代和控制流语法；有的只是普通的 JavaScript 代码而已。</p>
                         <h3 id="安装">安装</h3>
@@ -105,27 +113,28 @@
                 </div>
                 <div class="column">
                     <!-- TOC -->
-                    <p class="mb-5 px-3">
-                    <ol class="post-toc">
-                        <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E2%80%9CE%E2%80%9D-%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="post-toc-text">“E” 代表什么？</span></a></li>
-                        <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AE%89%E8%A3%85"><span class="post-toc-text">安装</span></a></li>
-                        <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%94%A8%E6%B3%95"><span class="post-toc-text">用法</span></a></li>
-                        <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81"><span class="post-toc-text">浏览器支持</span></a></li>
-                        <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%A0%87%E7%AD%BE%E5%90%AB%E4%B9%89"><span class="post-toc-text">标签含义</span></a></li>
+                    <p class="mb-5 px-3 article-toc">
+                    <header class="article-toc-header">文章目录:</header>
+                    <ol class="article-toc-link">
+                        <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#%E2%80%9CE%E2%80%9D-%E4%BB%A3%E8%A1%A8%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="article-toc-link-text">“E” 代表什么？</span></a></li>
+                        <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#%E5%AE%89%E8%A3%85"><span class="article-toc-link-text">安装</span></a></li>
+                        <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#%E7%94%A8%E6%B3%95"><span class="article-toc-link-text">用法</span></a></li>
+                        <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%94%AF%E6%8C%81"><span class="article-toc-link-text">浏览器支持</span></a></li>
+                        <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#%E6%A0%87%E7%AD%BE%E5%90%AB%E4%B9%89"><span class="article-toc-link-text">标签含义</span></a></li>
                     </ol>
                     </p>
                 </div>
             </div>
             <!-- Tags and Categories links -->
-            <nav class="breadcrumb is-large" aria-label="breadcrumbs">
-                <ul>
-                    <li><a class="" href="/tags/JavaScript/">#JavaScript</a></li>
-                    <li><a class="" href="/tags/Ejs/">#Ejs</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tag"></i><a href="/tags/JavaScript/">JavaScript&ensp;</a></li>
+                    <li><i class="fa-solid fa-tag"></i><a href="/tags/Ejs/">Ejs&ensp;</a></li>
                 </ul>
             </nav>
-            <nav class="breadcrumb is-large has-succeeds-separator" aria-label="breadcrumbs">
-                <ul>
-                    <li><a href="/categories/2021/">2021</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tags"></i><a href="/categories/2021/">2021&ensp;</a></li>
                 </ul>
             </nav>
         </div>
@@ -137,8 +146,14 @@
         </section>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -81,27 +80,49 @@
     <div class="container">
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220726232641.html"> HTML: 是一种用于创建网页的标准标记语言 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-26</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-26</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220726231039.html"> Airbnb CSS/Sass风格指南 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-26</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-26</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <p>一种最合理的css和Sass方法。</p>
             <p>前端css文件都是写SCSS文件,然后通过@import导入到style.scss文件中，最后通过gulp来生成style.css文件。</p>
@@ -116,14 +137,25 @@
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220726223318.html"> Hexo: 如何自定义Hexo主题 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-26</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-26</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <p>Hexo是一个使用node.js编写的静态博客生成框架<br> - warehouse: JSON数据库<br> - Nunjuck: 是<a target="_blank" rel="noopener" href="https://jinja.palletsprojects.com/">jinja2</a>模板的javascript的实现<br> - cscc样式和结构<br> - HTML 代码样式</p>
             <p>hexo依赖：<br> - Node.js<br> - Git</p>
@@ -136,30 +168,49 @@
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220726193620.html"> helloworld </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-26</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-26</span>
+                </span>
+                <span class="icon-text">
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220715200526.html"> Bash: 是 GNU 操作系统的 Shell 或命令语言解释器 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-15</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-15</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
-        <nav class="pagination mb-5 is-rounded" role="navigation" aria-label="pagination">
+        <nav class="pagination mb-5 is-rounded article-text-uppercase" role="navigation" aria-label="pagination">
             <!-- Frevious Page -->
             <a class="pagination-previous" href="/page/7/"> Previous </a>
             <!-- Next Page -->
@@ -168,8 +219,14 @@
         </nav>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

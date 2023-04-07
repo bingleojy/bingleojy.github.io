@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -79,20 +78,29 @@
         </nav>
     </div>
     <div class="container">
-        <div class="section px-6">
+        <div class="section px-6 article">
             <div class="columns">
                 <div class="column is-four-fifths">
                     <!-- Title -->
-                    <h2 class="title is-3">
-                        <a href="/post/20220824192229.html"> GPG: 是一个加密、解密、签名、验证工具 </a>
-                    </h2>
+                    <h2 class="article-header article-text-center">GPG: 是一个加密、解密、签名、验证工具</h2>
                     <!-- Date and Author -->
-                    <h2 class="tag has-addons subtitle">
-                        <span class="tag">2022-08-24</span>
-                        <span class="tag is-primary">Binglin Li</span>
-                    </h2>
+                    <h6 class="article-subtitle article-text-center">
+                        <span=class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-at"></i>
+                            </span>
+                            <span>2022-08-24</span>
+                        </span>
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                            <span>Binglin Li</span>
+                        </span>
+                    </h6>
+                    <br>
                     <!-- Content -->
-                    <div class="content mb-5 mr-0 pt-3 px-5">
+                    <div class="content mb-5 mr-0 pt-3 px-5 article-content">
                         <h4 id="GPG">GPG</h4>
                         <h4 id="GPG与Git">GPG与Git</h4>
                         <span id="more"></span>
@@ -100,23 +108,24 @@
                 </div>
                 <div class="column">
                     <!-- TOC -->
-                    <p class="mb-5 px-3">
-                    <ol class="post-toc">
-                        <li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GPG"><span class="post-toc-text">GPG</span></a></li>
-                        <li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GPG%E4%B8%8EGit"><span class="post-toc-text">GPG与Git</span></a></li>
+                    <p class="mb-5 px-3 article-toc">
+                    <header class="article-toc-header">文章目录:</header>
+                    <ol class="article-toc-link">
+                        <li class="article-toc-link-item article-toc-link-level-4"><a class="article-toc-link-link" href="#GPG"><span class="article-toc-link-text">GPG</span></a></li>
+                        <li class="article-toc-link-item article-toc-link-level-4"><a class="article-toc-link-link" href="#GPG%E4%B8%8EGit"><span class="article-toc-link-text">GPG与Git</span></a></li>
                     </ol>
                     </p>
                 </div>
             </div>
             <!-- Tags and Categories links -->
-            <nav class="breadcrumb is-large" aria-label="breadcrumbs">
-                <ul>
-                    <li><a class="" href="/tags/gpg/">#gpg</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tag"></i><a href="/tags/gpg/">gpg&ensp;</a></li>
                 </ul>
             </nav>
-            <nav class="breadcrumb is-large has-succeeds-separator" aria-label="breadcrumbs">
-                <ul>
-                    <li><a href="/categories/2022/">2022</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tags"></i><a href="/categories/2022/">2022&ensp;</a></li>
                 </ul>
             </nav>
         </div>
@@ -126,14 +135,14 @@
                 <!-- 在找到当前文章所在的 index -->
                 <!-- 下一篇文章 -->
                 <div class="tags has-addons">
-                    <span class="tag is-primary">Next chapter</span>
+                    <span class="tag">Next chapter : </span>
                     <span class="tag">
                         <a href="/post/20220828173231.html"> Compass 是一个开源 CSS 创作框架，它使用Sass 样式表语言使编写样式表变得强大而简单</a>
                     </span>
                 </div>
                 <!-- 上一篇文章 -->
                 <div class="tags has-addons">
-                    <span class="tag is-primary">Previous chapter</span>
+                    <span class="tag">Previous chapter : </span>
                     <span class="tag">
                         <a href="/post/20220824004402.html"> Web: webpack 是一个现代 JavaScript 应用程序的静态模块打包器(module bundler)</a>
                     </span>
@@ -142,8 +151,14 @@
         </section>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

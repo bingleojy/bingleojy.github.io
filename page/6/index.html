@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -81,71 +80,126 @@
     <div class="container">
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220801005500.html"> Less: 是一种 CSS 预处理器 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-08-01</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-08-01</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220801005445.html"> StyleLint: 是一个强大、先进的 CSS 代码检查器(linter) </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-08-01</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-08-01</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220801005438.html"> JavaScript: 代码风格检测 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-08-01</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-08-01</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220731191100.html"> Hexo 快速、简洁且高效的博客框架 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-31</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-31</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
         <section class="section">
             <!-- Title -->
-            <h1 class="title">
+            <h2 class="article-text-uppercase">
                 <a href="/post/20220731191052.html"> V8-JavaScript-Engine: V8 是驱动 Google Chrome 的 JavaScript 引擎的名称 </a>
-            </h1>
-            <!-- Date and Author -->
-            <h2 class="tag has-addons subtitle">
-                <span class="tag">2022-07-31</span>
-                <span class="tag is-primary">Binglin Li</span>
             </h2>
+            <!-- Date and Author -->
+            <h6 class="article-subtitle">
+                <span=class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </span>
+                    <span>2022-07-31</span>
+                </span>
+                <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                    <span>Binglin Li</span>
+                </span>
+            </h6>
+            <br>
             <!-- Content -->
             <p>V8 提供了 JavaScript 执行的运行时环境。 DOM 和其他 Web 平台 API 由浏览器提供。</p>
             <!-- Only display the Read More link if we are displaying an excerpt -->
         </section>
-        <nav class="pagination mb-5 is-rounded" role="navigation" aria-label="pagination">
+        <nav class="pagination mb-5 is-rounded article-text-uppercase" role="navigation" aria-label="pagination">
             <!-- Frevious Page -->
             <a class="pagination-previous" href="/page/5/"> Previous </a>
             <!-- Next Page -->
@@ -154,8 +208,14 @@
         </nav>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

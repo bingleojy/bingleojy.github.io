@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -79,20 +78,29 @@
         </nav>
     </div>
     <div class="container">
-        <div class="section px-6">
+        <div class="section px-6 article">
             <div class="columns">
                 <div class="column is-four-fifths">
                     <!-- Title -->
-                    <h2 class="title is-3">
-                        <a href="/post/20220701172839.html"> 投资者: 拥有财富的段位 </a>
-                    </h2>
+                    <h2 class="article-header article-text-center">投资者: 拥有财富的段位</h2>
                     <!-- Date and Author -->
-                    <h2 class="tag has-addons subtitle">
-                        <span class="tag">2022-07-01</span>
-                        <span class="tag is-primary">Binglin Li</span>
-                    </h2>
+                    <h6 class="article-subtitle article-text-center">
+                        <span=class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-at"></i>
+                            </span>
+                            <span>2022-07-01</span>
+                        </span>
+                        <span class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-calendar-days"></i>
+                            </span>
+                            <span>Binglin Li</span>
+                        </span>
+                    </h6>
+                    <br>
                     <!-- Content -->
-                    <div class="content mb-5 mr-0 pt-3 px-5">
+                    <div class="content mb-5 mr-0 pt-3 px-5 article-content">
                         <h2 id="投资者的段位">投资者的段位</h2>
                         <h3 id="01-一无所有的投资者">01).一无所有的投资者</h3>
                         <p>这些人没有钱来投资。他们不是花掉了自己挣来的每一分钱，就是花的比挣的还多。很多有钱人都处在<br> 这个等级。不幸的是，大约50%的成年人都属于这个等级。</p>
@@ -114,17 +122,18 @@
                 </div>
                 <div class="column">
                     <!-- TOC -->
-                    <p class="mb-5 px-3">
-                    <ol class="post-toc">
-                        <li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%8A%95%E8%B5%84%E8%80%85%E7%9A%84%E6%AE%B5%E4%BD%8D"><span class="post-toc-text">投资者的段位</span></a>
-                            <ol class="post-toc-child">
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85"><span class="post-toc-text">01).一无所有的投资者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-%E5%80%9F%E9%92%B1%E8%80%85"><span class="post-toc-text">02).借钱者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#03-%E5%82%A8%E8%93%84%E8%80%85"><span class="post-toc-text">03).储蓄者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#04-%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85"><span class="post-toc-text">04).聪明的投资者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#05-%E9%95%BF%E6%9C%9F%E6%8A%95%E8%B5%84%E8%80%85"><span class="post-toc-text">05).长期投资者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#06-%E6%88%90%E7%86%9F%E6%8A%95%E8%B5%84%E8%80%85"><span class="post-toc-text">06).成熟投资者</span></a></li>
-                                <li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#07-%E8%B5%84%E6%9C%AC%E5%AE%B6"><span class="post-toc-text">07).资本家</span></a></li>
+                    <p class="mb-5 px-3 article-toc">
+                    <header class="article-toc-header">文章目录:</header>
+                    <ol class="article-toc-link">
+                        <li class="article-toc-link-item article-toc-link-level-2"><a class="article-toc-link-link" href="#%E6%8A%95%E8%B5%84%E8%80%85%E7%9A%84%E6%AE%B5%E4%BD%8D"><span class="article-toc-link-text">投资者的段位</span></a>
+                            <ol class="article-toc-link-child">
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#01-%E4%B8%80%E6%97%A0%E6%89%80%E6%9C%89%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85"><span class="article-toc-link-text">01).一无所有的投资者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#02-%E5%80%9F%E9%92%B1%E8%80%85"><span class="article-toc-link-text">02).借钱者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#03-%E5%82%A8%E8%93%84%E8%80%85"><span class="article-toc-link-text">03).储蓄者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#04-%E8%81%AA%E6%98%8E%E7%9A%84%E6%8A%95%E8%B5%84%E8%80%85"><span class="article-toc-link-text">04).聪明的投资者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#05-%E9%95%BF%E6%9C%9F%E6%8A%95%E8%B5%84%E8%80%85"><span class="article-toc-link-text">05).长期投资者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#06-%E6%88%90%E7%86%9F%E6%8A%95%E8%B5%84%E8%80%85"><span class="article-toc-link-text">06).成熟投资者</span></a></li>
+                                <li class="article-toc-link-item article-toc-link-level-3"><a class="article-toc-link-link" href="#07-%E8%B5%84%E6%9C%AC%E5%AE%B6"><span class="article-toc-link-text">07).资本家</span></a></li>
                             </ol>
                         </li>
                     </ol>
@@ -132,14 +141,14 @@
                 </div>
             </div>
             <!-- Tags and Categories links -->
-            <nav class="breadcrumb is-large" aria-label="breadcrumbs">
-                <ul>
-                    <li><a class="" href="/tags/投资者/">#投资者</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tag"></i><a href="/tags/投资者/">投资者&ensp;</a></li>
                 </ul>
             </nav>
-            <nav class="breadcrumb is-large has-succeeds-separator" aria-label="breadcrumbs">
-                <ul>
-                    <li><a href="/categories/2022/">2022</a></li>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
+                    <li><i class="fa-solid fa-tags"></i><a href="/categories/2022/">2022&ensp;</a></li>
                 </ul>
             </nav>
         </div>
@@ -149,14 +158,14 @@
                 <!-- 在找到当前文章所在的 index -->
                 <!-- 下一篇文章 -->
                 <div class="tags has-addons">
-                    <span class="tag is-primary">Next chapter</span>
+                    <span class="tag">Next chapter : </span>
                     <span class="tag">
                         <a href="/post/20220702231558.html"> Python: 是一种解释型、面向对象、动态数据类型的高级程序设计语言</a>
                     </span>
                 </div>
                 <!-- 上一篇文章 -->
                 <div class="tags has-addons">
-                    <span class="tag is-primary">Previous chapter</span>
+                    <span class="tag">Previous chapter : </span>
                     <span class="tag">
                         <a href="/post/20220630195445.html"> 管理的常识: 高效人士的九次实践</a>
                     </span>
@@ -165,8 +174,14 @@
         </section>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>

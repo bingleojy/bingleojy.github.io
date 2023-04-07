@@ -19,7 +19,8 @@
     <noscript>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2
 		   ?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
-		   &family=Noto+Serif+SC:wght@400;500;600;700&display=swap" onload="this.media='all'" />
+		   &family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" onload="this.media='all'" />
+        <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet" onload="this.media='all'" />
     </noscript>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -27,8 +28,9 @@
     <link rel="icon" href="/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="manifest" href="/img/favicons/manifest.json">
     <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Noto+Sans" onload="this.media='all'">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono|Muli" onload="this.media='all'">
+    <link type="text/css" rel="preload stylesheet" as="style" href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700
+		&family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" crossorigin>
+    <link href="https://fonts.font.im/css?family=Poiret+One:300,400,500,600,700" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="/css/blog.css">
     <!-- Bulma's extensions:  timeline -->
@@ -37,20 +39,17 @@
 </head>
 <!-- Page Container -->
 
-<body>
+<body class="container is-max-widescreen">
     <div class="container">
-        <nav class="navbar is-light mb-5" role="navigation" aria-label="main navigation">
+        <nav class="navbar mb-5" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
-                </a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
-            <div class="navbar-menu">
+            <div class="navbar-menu site-navbar-menu article-text-uppercase">
                 <div class="navbar-start">
                     <a class="navbar-item" href="/"> Home </a>
                     <a class="navbar-item" href="/archives"> Archives </a>
@@ -65,7 +64,7 @@
                     <div class="navbar-item">
                         <div class="field is-grouped">
                             <p class="control">
-                                <a class="bd-tw-button button is-primary" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
+                                <a class="bd-tw-button button" data-social-network="Github" data-social-action="github" data-social-target="https://binglinli.github.io" target="_blank" href="https://binglinli.githun.io">
                                     <span class="icon">
                                         <i class="fa-brands fa-github"></i>
                                     </span>
@@ -79,45 +78,150 @@
         </nav>
     </div>
     <div class="container">
-        <div class="section px-6">
+        <div class="section px-6 article">
             <div class="columns">
                 <div class="column is-four-fifths">
                     <!-- Title -->
-                    <h2 class="title is-3">
-                        <a href="/docs/index.html"> docs </a>
-                    </h2>
+                    <h2 class="article-header article-text-center">Docs</h2>
                     <!-- Date and Author -->
-                    <h2 class="tag has-addons subtitle">
-                        <span class="tag">2023-03-13</span>
-                    </h2>
+                    <h6 class="article-subtitle article-text-center">
+                        <span=class="icon-text">
+                            <span class="icon">
+                                <i class="fa-solid fa-at"></i>
+                            </span>
+                            <span>2023-03-13</span>
+                        </span>
+                        <span class="icon-text">
+                        </span>
+                    </h6>
+                    <br>
                     <!-- Content -->
-                    <div class="content mb-5 mr-0 pt-3 px-5">
+                    <div class="content mb-5 mr-0 pt-3 px-5 article-content">
+                        <h4 id="System-Environment">System Environment:</h4>
+                        <ul>
+                            <li>
+                                <p>Windows</p>
+                                <ul>
+                                    <li>PowerShell <ul>
+                                            <li><a target="_blank" rel="noopener" href="https://github.com/lukesampson/pshazz">Pshazz</a> : extends your powershell profile</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>Scoop</p>
+                                <ul>
+                                    <li><a target="_blank" rel="noopener" href="https://scoop.sh/">Scoop: A command-line installer for Windows</a></li>
+                                    <li><a target="_blank" rel="noopener" href="https://github.com/duzyn/scoop-cn">Scoop 应用库中国加速</a>
+                                        <ul>
+                                            <li>本应用库包含 Scoop 的安装脚本，用于国内用户初次下载安装 Scoop。</li>
+                                            <li>同时包含了 Scoop 官方的九个应用库:</li>
+                                            <li>main、extras、versions、nirsoft、 php、nerd-fonts、nonportable、java、games</li>
+                                            <li>（使用命令 scoop bucket known 查看），</li>
+                                            <li>用一个库包含了各家的库，用户不用在多个地方搜索应用。</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p><a target="_blank" rel="noopener" href="https://ghproxy.com/">Github加速</a></p>
+                            </li>
+                        </ul>
+                        <h4 id="Editor">Editor</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://www.gnu.org/savannah-checkouts/gnu/emacs/emacs.html">GUN Emacs</a></li>
+                            <li><a target="_blank" rel="noopener" href="https://emacs-china.org/">GUN Emacs 中文网</a></li>
+                        </ul>
+                        <h4 id="TEXT-Manager">TEXT Manager</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/">Markdown</a> - Markdown is a text-to-HTML conversion tool for web writers.</li>
+                            <li><a target="_blank" rel="noopener" href="https://www.markdownguide.org/">Markdown Document</a> - the simple and easy-to-use markup language you can use to format virtually any document.</li>
+                        </ul>
                         <h4 id="Style-Guide">Style Guide</h4>
-                        <p><a target="_blank" rel="noopener" href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a></p>
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://google.github.io/styleguide/htmlcssguide.html">Google HTML/CSS Style Guide</a></li>
+                        </ul>
                         <h4 id="CSS-Framework">CSS Framework</h4>
-                        <p><a target="_blank" rel="noopener" href="https://bulma.io/">Bulma: the modern CSS framework that just works</a></p>
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://bulma.io/">Bulma: the modern CSS framework that just works</a></li>
+                        </ul>
+                        <h4 id="JavaScript">JavaScript</h4>
+                        <ul>
+                            <li><a target="_blank" rel="noopener" href="https://nodejs.org/">NodeJs</a> - an open-source, cross-platform JavaScript runtime environment.</li>
+                            <li><a target="_blank" rel="noopener" href="https://www.npmjs.com/">NPM</a> - a JavaScript package manager</li>
+                        </ul>
+                        <h4 id="Python-programming-language">Python programming language</h4>
+                        <ul>
+                            <li>
+                                <h5 id="Python-Official-Website"><a target="_blank" rel="noopener" href="https://www.python.org/">Python Official Website</a></h5>
+                                <ul>
+                                    <li>
+                                        <h6 id="pip">pip</h6>
+                                        <a target="_blank" rel="noopener" href="https://pip.pypa.io/">Pip Docs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5 id="Pyprojectx-ALL-INCLUSIVE-PYTHON-PROJECTS"><a target="_blank" rel="noopener" href="https://pyprojectx.github.io/">Pyprojectx</a> - ALL-INCLUSIVE PYTHON PROJECTS</h5>
+                            </li>
+                            <li>
+                                <h5 id="PDM-A-next-generation-package-manager"><a target="_blank" rel="noopener" href="https://pdm.fming.dev/2.4/">PDM</a> - A next generation package manager</h5>
+                                <p>PDM, as described, is a modern Python package and dependency manager supporting the latest PEP standards.<br> But it is more than a package manager</p>
+                            </li>
+                            <li>
+                                <h5 id="Flask">Flask</h5>
+                                <ul>
+                                    <li>
+                                        <h6 id="Dependencies">Dependencies:</h6> MarkupSafe<br> itsdangerous<br> colorama<br> Werkzeug<br> Jinja2<br> click<br> python-dotenv
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5 id="Tutorial">Tutorial</h5>
+                                <ul>
+                                    <li>
+                                        <h6 id="Mega-Programming">Mega Programming:</h6>
+                                        <p>Chinese: <a target="_blank" rel="noopener" href="http://www.pythondoc.com/flask-mega-tutorial/index.html">The Flask Mega-Tutorial</a><br> English: <a target="_blank" rel="noopener" href="https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world">The Flask Mega-Tutorial</a><br> Author: <a target="_blank" rel="noopener" href="https://blog.miguelgrinberg.com/index">Blog of the author of this tutorial</a></p>
+                                    </li>
+                                    <li>
+                                        <h6 id="Restful-API">Restful API</h6>
+                                        <p>Chinese: <a target="_blank" rel="noopener" href="http://www.pythondoc.com/flask-restful/index.html#">Designing a RESTful API with Python and Flask</a><br> English: <a target="_blank" rel="noopener" href="https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask">Designing a RESTful API with Python and Flask</a></p>
+                                    </li>
+                                    <li>
+                                        <h6 id="Flask-Restful">Flask-Restful</h6>
+                                        <p>Docs: <a target="_blank" rel="noopener" href="https://flask-restful.readthedocs.io/en/latest/">Flask-Restful</a></p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="column">
                     <!-- TOC -->
-                    <p class="mb-5 px-3">
+                    <p class="mb-5 px-3 article-toc">
                     </p>
                 </div>
             </div>
             <!-- Tags and Categories links -->
-            <nav class="breadcrumb is-large" aria-label="breadcrumbs">
-                <ul>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
                 </ul>
             </nav>
-            <nav class="breadcrumb is-large has-succeeds-separator" aria-label="breadcrumbs">
-                <ul>
+            <nav class="breadcrumb is-small " aria-label="breadcrumbs">
+                <ul class="article-text-uppercase article-link">
                 </ul>
             </nav>
         </div>
     </div>
     <div class="container">
-        <footer class="footer">
-            <div class="context has-text-centered"> @Untitled. All right reserved | Design & Hexo <a href="https://binglinli.github.io/">Binglin Li</a>
+        <footer class="footer article-footer article-text-center">
+            <div class="context">
+                <p> Make Websites. Make Magic. </p> All right reserved | Design & Hexo <span class="icon-text">
+                    <span class="icon">
+                        <i class="fa-solid fa-face-grin-tongue-wink"></i>
+                    </span>
+                    <span><a href="https://bingleojy.github.io/">BingLeoJY</a></span>
+                </span>
             </div>
         </footer>
     </div>
