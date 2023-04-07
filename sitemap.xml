@@ -502,6 +502,20 @@
   </url>
   
   <url>
+    <loc>https://bingleojy.github.io/tags/compass/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bingleojy.github.io/tags/crucian/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bingleojy.github.io/tags/Sass/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -530,28 +544,7 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/compass/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bingleojy.github.io/tags/AJAX/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bingleojy.github.io/tags/Csaa/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bingleojy.github.io/tags/ECharts/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -572,6 +565,34 @@
   </url>
   
   <url>
+    <loc>https://bingleojy.github.io/tags/ECharts/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bingleojy.github.io/tags/book/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bingleojy.github.io/tags/%E6%8A%95%E8%B5%84%E8%80%85/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bingleojy.github.io/tags/%E7%AE%A1%E7%90%86%E7%9A%84%E5%B8%B8%E8%AF%86/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://bingleojy.github.io/tags/Emacs/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -579,7 +600,14 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/crucian/</loc>
+    <loc>https://bingleojy.github.io/tags/gpg/</loc>
+    <lastmod>2023-04-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bingleojy.github.io/tags/AJAX/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -600,13 +628,6 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/gpg/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bingleojy.github.io/tags/Bash/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
@@ -621,21 +642,14 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/%E6%8A%95%E8%B5%84%E8%80%85/</loc>
+    <loc>https://bingleojy.github.io/tags/js-uglifyjs/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/book/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bingleojy.github.io/tags/%E7%AE%A1%E7%90%86%E7%9A%84%E5%B8%B8%E8%AF%86/</loc>
+    <loc>https://bingleojy.github.io/tags/Vite/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -649,14 +663,7 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/js-uglifyjs/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bingleojy.github.io/tags/Less/</loc>
+    <loc>https://bingleojy.github.io/tags/JSDoc/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -670,14 +677,7 @@
   </url>
   
   <url>
-    <loc>https://bingleojy.github.io/tags/JSDoc/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bingleojy.github.io/tags/Vite/</loc>
+    <loc>https://bingleojy.github.io/tags/Less/</loc>
     <lastmod>2023-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
